@@ -1,0 +1,64 @@
+.body {
+  width: 100%;
+  height: 100vh;
+}
+
+.note-add-tip {
+  position: absolulte !important;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.3;
+  font-size: xx-large;
+  font-weight: 800;
+  -moz-user-select: none;
+  user-select: none;
+  -webkit-user-select: none;
+  z-index: -1;
+}
+
+.notes-area {
+  width: 100%;
+  height: 100vh;
+  overflow: scroll;
+  z-index: 1;
+}
+
+.note {
+  position: absolute;
+  z-index: 10;
+  /* transform: translate(-50%, -50%); */
+  display: inline-block;
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 2%;
+  background-color: whitesmoke;
+}
+
+.note textarea {
+  position: inherit;
+  min-height: 100px;
+  margin-top: 10px;
+
+  /* transform: translate(-50%, -50%); */
+}
+
+.note .preview-element {
+  position: inherit;
+  min-height: 100px;
+  margin-top: 10px;
+}
+
+.note-on-move {
+    z-index: 100;
+    transform: scale(1.1) ;
+    transition: scale ease-in-out 0.5s;
+}
+
+.small-text {
+    font-size: smaller;
+    opacity: 0.3;
+    text-align: right;
+    margin-top: 20px;
+    user-select: none;
+}
